@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Library</h1>
+    <table align="center" width="60%" border="1">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Number of Pages</th>
+                <th>Year</th>
+                <th>Read</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <dialog id="dialog">
+        <form method="dialog">
+
+            <h2>NEW BOOK</h2>
+
+            <label>Title:</label>
+            <input class="titleInput" type="text">
+            <label>Author:</label>
+            <input class="authorInput" type="text">
+            <label>Genre:</label>
+            <input class="genreInput" type="text">
+            <label>Number of pages:</label>
+            <input class="nopInput" type="number" min="1">
+            <label>Year:</label>
+            <input class="yearInput" type="number" max="2025">
+            
+            <div class="dialogBtns">
+                <button id="cancelBtn" value="cancel" formmethod="dialog">Cancel</button>
+                <button id="confirmBtn" value="defalut">Confirm</button>
+            </div>
+
+        </form>
+    </dialog>
+    <div class="newBookBtn">
+        <button>New Book</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
